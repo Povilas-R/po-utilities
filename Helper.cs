@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Po.Utilities
 {
@@ -12,6 +13,7 @@ namespace Po.Utilities
     {
         /// <summary>
         /// Executes the given action asynchronously using <see cref="Thread"/> class.
+        /// Just use <see cref="Task.Run(Action)"/> instead!
         /// </summary>
         /// <param name="action">Action to execute.</param>
         /// <param name="apartmentState"><see cref="Thread"/> instance's apartment state.</param>
